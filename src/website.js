@@ -1,4 +1,5 @@
 import loadHome from "./home";
+import loadFood from "./food";
 
 function createHeader() {
   const header = document.createElement("div")
@@ -26,6 +27,7 @@ function createHeader() {
   foodBtn.addEventListener("click", (e) => {
     if (e.target.classList.contains("active")) return
     setActiveButton(foodBtn);
+    loadFood();
   })
 
   const aboutBtn = document.createElement("a")

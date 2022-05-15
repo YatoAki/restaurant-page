@@ -146,6 +146,8 @@ a:hover{
 
 .food-card{
   background-color: #202933;
+  width: 200px;
+  height: 100px;
   position: relative;
   padding: 30px;
   border-radius: 10px;
