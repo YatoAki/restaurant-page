@@ -1,0 +1,102 @@
+:root{
+  --white: #C3C9E9;
+  --black: #131B23;
+}
+
+html,body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+button{
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.header{
+  padding: 10px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-links{
+  display: flex;
+  gap:50px;
+}
+
+/* MID */
+
+.mid{
+  padding: 10px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#noodle-pic{
+  height: auto;
+  width: 330px;
+  padding: 10px 0;
+  border-radius: 10%;
+  transition: all 0.1s ease-in-out;
+}
+
+#noodle-pic:hover{
+  transform: scale(1.02);
+}
+
+.ads{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:20px;
+}
+
+.ads p:first-child{
+  font-size: 70px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.ads p:last-child{
+  font-weight: 300;
+  font-style: italic;
+  padding-left: 10px;
+  margin: 0;
+}
+
+.ads button{
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid var(--white);
+  padding: 15px 25px;
+  transition: all 0.1s ease-in-out;
+}
+
+.ads button:hover{
+  transform: scale(1.02);
+}
