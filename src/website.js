@@ -30,17 +30,9 @@ function createHeader() {
     loadFood();
   })
 
-  const aboutBtn = document.createElement("a")
-  aboutBtn.textContent = "About"
-  aboutBtn.classList.add("button-nav")
-  aboutBtn.addEventListener("click", (e) => {
-    if (e.target.classList.contains("active")) return
-    setActiveButton(aboutBtn);
-  })
 
   nav.appendChild(homeBtn);
   nav.appendChild(foodBtn);
-  nav.appendChild(aboutBtn);
 
   header.appendChild(logo);
   header.appendChild(nav);
