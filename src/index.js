@@ -1,2 +1,4 @@
+import initializeWebsite from "./website";
 import './style.css';
-import noodle from './noodle.jpg';
+
+initializeWebsite();
