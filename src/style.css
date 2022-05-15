@@ -11,6 +11,10 @@ html,body{
   color: var(--white);
 }
 
+p{
+  margin: 0;
+}
+
 button{
   border: none;
   color: inherit;
@@ -101,4 +105,80 @@ a:hover{
 
 .ads button:hover{
   transform: scale(1.02);
+}
+
+/* FOOD */
+
+.foods{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 150px;
+  align-items: center;
+  gap: 30px;
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.details p:first-child{
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: 15px;
+}
+
+.details p:last-child{
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.food-cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+  justify-content: center;
+}
+
+.food-card{
+  background-color: #202933;
+  position: relative;
+  padding: 30px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  gap:20px;
+  transition: all .3s ease-out;
+  cursor: pointer;
+}
+
+.food-card:hover{
+  top:-10px;
+  transform: scale(1.01);
+}
+
+.food-card img{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.food-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:10px;
+}
+
+.food-description p:first-child{
+  font-weight: bold;
+}
+
+.food-description p:last-child{
+  font-size: 15px;
+  color: #ccaf12;
 }
