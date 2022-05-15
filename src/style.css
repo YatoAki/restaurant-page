@@ -130,6 +130,7 @@ a:hover{
   font-size: 70px;
   font-weight: bold;
   letter-spacing: 15px;
+  text-align: center;
 }
 
 .details p:last-child{
