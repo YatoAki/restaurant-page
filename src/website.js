@@ -1,4 +1,4 @@
-
+import loadHome from "./home";
 
 function createHeader() {
   const header = document.createElement("div")
@@ -16,7 +16,8 @@ function createHeader() {
   homeBtn.classList.add("button-nav")
   homeBtn.addEventListener("click", (e) => {
     if (e.target.classList.contains("active")) return
-    console.log(e.target.classList)
+    setActiveButton(homeBtn);
+    loadHome();
   })
 
   const foodBtn = document.createElement("a")
@@ -24,7 +25,7 @@ function createHeader() {
   foodBtn.classList.add("button-nav")
   foodBtn.addEventListener("click", (e) => {
     if (e.target.classList.contains("active")) return
-    console.log(e.target.classList)
+    setActiveButton(foodBtn);
   })
 
   const aboutBtn = document.createElement("a")
@@ -32,7 +33,7 @@ function createHeader() {
   aboutBtn.classList.add("button-nav")
   aboutBtn.addEventListener("click", (e) => {
     if (e.target.classList.contains("active")) return
-    console.log(e.target.classList)
+    setActiveButton(aboutBtn);
   })
 
   nav.appendChild(homeBtn);
@@ -57,10 +58,19 @@ function setActiveButton(button) {
   button.classList.add("active");
 }
 
+function createMain() {
+  const main = document.createElement("main");
+  main.classList.add("main");
+  main.setAttribute("id", "main");
+  return main;
+}
+
 function initializeWebsite() {
   const content = document.getElementById("content");
 
   content.appendChild(createHeader());
+  content.appendChild(createMain());
+  loadHome();
 
   setActiveButton(document.querySelector(".button-nav"));
 }
