@@ -113,7 +113,7 @@ a:hover{
 .foods{
   display: flex;
   flex-direction: column;
-  padding: 10px 150px;
+  padding: 30px 150px;
   align-items: center;
   gap: 30px;
 }
